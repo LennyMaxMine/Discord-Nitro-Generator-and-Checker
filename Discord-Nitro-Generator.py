@@ -186,5 +186,7 @@ log_txt.write("Generated Invalid Codes: " + str(nogci) + "\n")
 log_txt.write("Generated Failed to Check Codes: " + str(nogcf) + "\n")
 
 now2 = (datetime.datetime.now())
+now3 = now2 - now
+log_txt.write("Time while Programm was runnning: " + str(now3) + "\n")
 log_txt.write(now2.strftime("German Timezone  |  End: %d-%m-%y %H:%M:%S"))
 log_txt.close
