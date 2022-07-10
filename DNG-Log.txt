@@ -1,0 +1,12 @@
+German Timezone  |  Start: 10-07-22 12:42:26
+Accepted EULA = True
+Internet Connection = Found  |  Status Code: 200
+Discord-Web-Server Connection = Found  |  Status Code: 200
+Discord-Web-Servers Maybe Banned = False  |  Status Code: 200
+Used Webhook = False
+Asked for: '5' Link(s) to generate  |  howmanydcnlinks = '5'
+Generated Codes: 5
+Generated Valid Codes: 0
+Generated Invalid Codes: 0
+Generated Failed to Check Codes: 5
+German Timezone  |  End: 10-07-22 12:42:32
