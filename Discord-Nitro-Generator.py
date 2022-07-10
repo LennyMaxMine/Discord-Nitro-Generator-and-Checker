@@ -36,6 +36,7 @@ print("                                       ")
 print(f"{colorama.Fore.CYAN}")
 print("This project was created only for good purposes and personal use.")
 print("By using Laxweb-Discord-Nitro-Generator, you agree that you hold responsibility and accountability of any consequences caused by your actions.")
+print("Do not pass this programme off as yours. When using the programme for social media content, link my Discord profile (LennyMaxMine).")
 print("By pressing Enter you agree the EULA of Laxweb-Discord-Nitro-Generator, Discord-TOS and Github-Eula.")
 if input(f"{colorama.Fore.LIGHTCYAN_EX}(Press Enter)") == "":
     log_txt.write("Accepted EULA = True\n")
