@@ -121,7 +121,7 @@ except ValueError:
     exit()  # Exit program
 print("")
 
-
+start_time = time.time()
 
 for i in range(howmanydcnlinks):
     # call random.choices() string module to find the string in Uppercase + numeric data.  
@@ -138,7 +138,7 @@ for i in range(howmanydcnlinks):
     if r.status_code == 200:
         nogc = nogc + 1
         nogcv = nogcv + 1
-        print(f"{colorama.Fore.YELLOW}NogC " + str(nogc) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.BLUE} Status-Code " + str(r.status_code) + f"{colorama.Fore.MAGENTA} |" f"{colorama.Fore.GREEN} Valid{colorama.Fore.MAGENTA} | {colorama.Fore.WHITE}" + final_code) #Valid
+        print(f"{colorama.Fore.YELLOW}NogC " + str(nogc) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.BLUE} Status-Code " + str(r.status_code) + f"{colorama.Fore.MAGENTA} | " + f"{colorama.Fore.LIGHTYELLOW_EX}T+: " + "%f" % (time. time() - start_time) + f"{colorama.Fore.MAGENTA} | " +f"{colorama.Fore.GREEN} Valid{colorama.Fore.MAGENTA} | {colorama.Fore.WHITE}" + final_code) #Valid
         
         if inputwebhook != "":
             hook.send(final_code)
@@ -151,7 +151,7 @@ for i in range(howmanydcnlinks):
     elif r.status_code == 429:
         nogc = nogc + 1
         nogcf = nogcf + 1
-        print(f"{colorama.Fore.YELLOW}NogC " + str(nogc) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.BLUE} Status-Code " + str(r.status_code) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.LIGHTRED_EX} Failed to Check{colorama.Fore.MAGENTA} | {colorama.Fore.WHITE}" + final_code) #Invalid
+        print(f"{colorama.Fore.YELLOW}NogC " + str(nogc) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.BLUE} Status-Code " + str(r.status_code) + f"{colorama.Fore.MAGENTA} | " + f"{colorama.Fore.LIGHTYELLOW_EX}T+: " + "%f" % (time. time() - start_time) + f"{colorama.Fore.MAGENTA} | " +f"{colorama.Fore.LIGHTRED_EX} Failed to Check{colorama.Fore.MAGENTA} | {colorama.Fore.WHITE}" + final_code) #Invalid
 
         if inputwebhook != "":
             hook.send(final_code)
@@ -160,7 +160,7 @@ for i in range(howmanydcnlinks):
     else:
         nogc = nogc + 1
         nogci = nogci + 1
-        print(f"{colorama.Fore.YELLOW}NogC " + str(nogc) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.BLUE} Status-Code " + str(r.status_code) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.RED} Invalid{colorama.Fore.MAGENTA} | {colorama.Fore.WHITE}" + final_code) #Invalid
+        print(f"{colorama.Fore.YELLOW}NogC " + str(nogc) + f"{colorama.Fore.MAGENTA} |" + f"{colorama.Fore.BLUE} Status-Code " + str(r.status_code) + f"{colorama.Fore.MAGENTA} | " + f"{colorama.Fore.LIGHTYELLOW_EX}T+: " + "%f" % (time. time() - start_time) + f"{colorama.Fore.MAGENTA} | " +f"{colorama.Fore.RED} Invalid{colorama.Fore.MAGENTA} | {colorama.Fore.WHITE}" + final_code) #Invalid
 
         if inputwebhook != "":
             hook.send(final_code)
